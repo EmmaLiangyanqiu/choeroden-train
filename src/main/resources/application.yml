@@ -1,0 +1,23 @@
+server:
+  port: 20518
+
+content: 20518 梁燕秋
+eureka:
+  instance:
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 30
+    metadata-map:
+      VERSION: v1
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.12.209:8000/eureka/
+    registryFetchIntervalSeconds: 10
+train:
+  jobNumber: 20518
+  jobName: 梁燕秋
+
+management:
+  port: 18081
+  security:
+    enabled: false
